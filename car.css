@@ -1,0 +1,394 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+#Banner{
+    background: linear-gradient(#00000080, #651111) ,url(pic5.jpg);
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment:fixed;
+}
+.logo{
+    width: 250px;
+    top: -5%;
+    left: 5px;
+    position: absolute;
+}
+.Banner-text{
+    text-align: center;
+    padding-top: 150px;
+}
+.Banner-text h1{
+    font-size: 150px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background: -webkit-linear-gradient(rgba(94, 98, 108, 1), rgb(254,252,254));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.Banner-text p{
+    font-size: 30px;
+    font-style: italic;
+    background: -webkit-linear-gradient(rgba(94, 98, 108, 1), rgb(254,252,254));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.Banner-btn{
+    margin: 70px auto 0;
+}
+.Banner-btn a{
+    width: 150px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 12px 0;
+    color: #efefef;
+    border: 3px solid rgba(94, 98, 108, 1);
+    border-radius: 5px;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    transition: color 0.5s;
+}
+
+.Banner-btn a span{
+    width: 0%;
+    height: 100%;
+    z-index: -1;
+    background:linear-gradient(rgba(94, 98, 108, 1), rgb(254,252,254));
+    position: absolute; 
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.Banner-btn a:hover span {
+    width: 100%;
+}
+.Banner-btn a:hover{
+    color: #00000080;
+}
+#sideNav{
+    width: 250px;
+    height: 100vh;
+    right: -250px;
+    top: 0;
+    position: fixed;
+    z-index: 2;
+    background:linear-gradient(#00000080, #651111);
+    transition: 0.5s;
+}
+nav ul li{
+    list-style: none;
+    margin: 50px 20px;
+}
+nav ul li a {
+    text-decoration: none;
+    background: -webkit-linear-gradient(rgba(94, 98, 108, 1), rgb(254,252,254));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#menuBtn{
+    width: 250px;
+    position: fixed;
+    text-align: right;
+    right: 30px ;
+    top: 20px;
+    border-radius: 3px;
+    z-index: 3;
+    cursor: pointer;
+    background: -webkit-linear-gradient(rgba(94, 98, 108, 1), rgb(254,252,254));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
+
+#features{
+    width: 100%;
+    padding: 70px 0;
+}
+.fet{
+    text-align: center;
+    padding-bottom: 70px;
+}
+.fet p{
+    margin: auto;
+    font-size: 20px;
+    font-weight: bold;
+    color: #651111;
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+}
+.fet p::after{
+    content:"";
+    width: 50px;
+    height: 30px;
+    background: linear-gradient(#651111, #fff);
+    top: -20px;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+    transform: rotate(10deg);
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+}
+.fet h1{
+    font-size: 50px;
+    font-family: Cambria, Cochin, 'Georgia', Times, Times New Roman, serif;
+
+}
+.featureBox{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.feature{
+    flex-basis: 50%;
+}
+.featureImg{
+    flex-basis: 50%;
+    margin: auto;
+    position: relative;
+}
+.featureImg img{
+    width: 100%;
+    border-radius: 10px;
+}
+.cover{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    border-radius: 10px;
+    background: linear-gradient(#00000080, #651111) ;
+}
+.feature h1{
+    text-align: left;
+    margin-bottom: 10px;
+    font-weight: 100;
+    color: #651111;
+    font-size: 40px;
+}
+.featuresDesc{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.featureIcon .fa-solid{
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    line-height: 50px;
+    border-radius: 8px;
+    color: #651111;
+    border: 1px solid #651111;
+}
+.featureText p{
+    font-size:20px;
+}
+
+
+#service{
+    width: 100%;
+    padding: 70px 0;
+    background: #efefef;
+}
+.serviceBox{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+}
+.singleService{
+    flex-basis: 48%;
+    text-align: center;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    color: #fff;
+    position: relative;
+}
+.singleService img{
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    border-radius: 7px;
+    cursor: pointer;
+    background: linear-gradient(#00000080, #651111) ;
+    opacity: 0;
+    transition: 1s;
+}
+.singleService:hover .overlay{
+    opacity: 1;
+}
+.servicedesc{
+    width: 80%;
+    position:absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    opacity: 0;
+    transition: 1s;
+}
+hr{
+    background: #fff;
+    width: 60%;
+    height: 2px;
+    border: 0;
+    margin: 15px 0;
+}
+.servicedesc p{
+    font-size: 14px;
+}
+.singleService:hover .servicedesc{
+    bottom: 40%;
+    opacity: 1;
+}
+
+#footer{
+    padding: 100px 0 20px;
+    background: #efefef;
+    position: relative;
+}
+
+.footerRow{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footerRight, .footerLeft{
+    flex-basis: 45%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.footerRight{
+    text-align: right;
+}
+.footerRow h1{
+    margin: 10px 0;
+}
+.footerRow p{
+    line-height: 35px;
+}
+.footerRow span{
+    line-height: 35px;
+    margin:10px 0 ;
+
+}
+.fa-solid{
+    color: #651111;
+}
+.fa-clock{
+    color: #651111;
+}
+.footerImg{
+    max-width: 370px;
+    position: absolute;
+    opacity: 0.1;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%,-50%);
+}
+.socialIcons{
+    text-align: center;
+}
+.socialIcons .fa-brands {
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    line-height: 32px;
+    border: 2px solid #651111;
+    margin: 40px 5px 0;
+    cursor: pointer;
+    color: #651111;
+    transition: 0.5s;;
+}
+.socialIcons .fa-brands:hover{
+    transform: translatey(-10px);
+    background: #651111;
+    color: #fff;
+}
+
+/*media queries*/
+
+@media screen and (max-width: 770px){
+    .Banner-text h1{
+        font-size: 45px;
+    }
+    .Banner-btn a{
+        display: block;
+        margin: 20px auto;
+    }
+    .Banner-text p{
+        font-size: 20px;
+        font-weight: bolder;
+    }
+    .logo{
+        width: 150px;
+        left: 5px;
+        position: absolute;
+    }
+    .singleService{
+        flex-basis: 100%;
+        margin-bottom: 30px;
+    }
+    .servicedesc p{
+        font-size: 12px;
+    }
+    hr{
+        margin: 5px auto;
+    }
+    .singleService:hover .servicedesc{
+        bottom: 25%;
+    }
+    .fet h1{
+        font-size: 35px;
+    }
+    .feature{
+        flex-basis: 100%;
+    }
+    .featureImg{
+        flex-basis: 100%;
+    }
+    .featureImg img{
+        width: 100%;
+    }
+    .footerRight, .footerLeft{
+        flex-basis: 100%;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    .footerImg{
+        max-width: 200px;
+        position: absolute;
+        opacity: 0.1;
+        left: 50%;
+        top: 20%;
+        transform: translate(-50%,-50%);
+    }
+}                             
+
+
+
+
+
+
+
+
+
+
+
